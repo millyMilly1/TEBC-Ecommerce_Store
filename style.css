@@ -2890,3 +2890,75 @@ section.categories .category-content a{
 .jarallax.min-height300 {
     min-height: 300px;
 }
+
+/* 7.15 order form 
+--------------------------------------------------------------*/
+
+#quantity-field{
+  width: 85px;
+  
+}
+
+#product{
+    width: 200px;
+}
+
+#orderForm{
+  box-sizing: border-box;
+  box-shadow: #191919;
+}
+
+#mainform{
+  text-align: center; 
+
+}
+
+
+
+/* Style for the fixed-size textarea with word wrap */
+.text-area {
+  width: 300px; 
+  height: 100px;
+  resize: none; 
+  word-wrap: break-word; 
+}
+
+
+/* Base button styles */
+#placeOrder {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+/* customer order page*/
+
+#orderAside{
+  margin-top: 30px;
+}
+
+#shopsec{
+  margin: 20px;  
+  
+}
+
+/* Button styles on hover */
+#placeOrder:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Enlarge the button slightly on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Button styles on active (when clicked) */
+#placeOrder:active {
+  background-color: #1f6fbb;
+}
+
+/* Optional: Disable the button's outline on focus */
+#placeOrder:focus {
+  outline: none;
+}
