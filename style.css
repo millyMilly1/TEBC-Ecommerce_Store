@@ -2962,3 +2962,23 @@ section.categories .category-content a{
 #placeOrder:focus {
   outline: none;
 }
+
+/*floating whatsapp icon*/
+
+/* CSS styles for the fixed icon */
+#fixed-icon {
+  position: fixed;
+  bottom: 20px; /* Adjust this value to control the vertical position */
+  right: 20px; /* Adjust this value to control the horizontal position */
+  z-index: 1000; /* Controls the stacking order; use as needed */
+  /* Add any other icon styles (e.g., width, height) here */
+}
+
+/* Styles for the icon image */
+#fixed-icon img {
+  width: 40px; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  /* Add any other image styles here */
+}
+
+
