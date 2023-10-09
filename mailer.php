@@ -30,10 +30,9 @@ try {
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('tebc@example.com', 'TEBC');
+    $mail->setFrom('sapphires451@gmail.com', 'TEBC');
     $mail->addAddress('chukwurahenry@gmail.com', 'milly');     //Add a recipient
-    $mail->addAddress('ellen@example.com');               //Name is optional
-    $mail->addAddress('swiftXchange3@gamil.com', 'me');     //Add a recipient
+    $mail->addAddress('swiftXchange3@gmail.com', 'me');     //Add a recipient
     $mail->addAddress('lillianchukwura@gmail.com');               //Name is optional
     $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('cc@example.com');
@@ -46,12 +45,15 @@ try {
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
     $mail->Subject = 'contact-form';
-    $mail->Body    = 'this message is from' . $name .'<br> sent from' . $email . '\n'. $message;
+    $mail->Body = 'SENDER NAME: <b> ' . $name . '</b><br> SENDERS EMAIL: ' . $email . '<br>MESSAGE: ' . $message;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
+    
     $mail->send();
     echo 'Message has been sent';
-    header("Location: thank-you.html?mailsend");
+    header("Location: thank-you.php?mailsend");
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
+
+?>
