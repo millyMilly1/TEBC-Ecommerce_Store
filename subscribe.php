@@ -5,10 +5,8 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-$name = $_POST['name'];
  $email = $_POST['email'];
- $message = $_POST['message'];
-
+ 
 //Load Composer's
 require 'PHPMailer/src/Exception.php';
 require  'PHPMailer/src/PHPMailer.php';
@@ -32,8 +30,8 @@ try {
     //Recipients
     $mail->setFrom('sapphires451@gmail.com', 'TEBC');
     $mail->addAddress('devtech562@gmail.com', 'Tech-Support');     //Add a recipient
-    $mail->addAddress('swiftXchange3@gmail.com', 'Swift-X technology');     //Add a recipient
-    $mail->addAddress('ELITEBYTOL@GMAIL.COM', 'Elite-Merch');              //Name is optional
+    $mail->addAddress('swiftXchange3@gmail.com', 'Swift-X technology');    //Add a recipient
+    $mail->addAddress('ELITEBYTOL@GMAIL.COM', 'Elite-Merch');  
     $mail->addReplyTo('info@example.com', 'Information');
     $mail->addCC('cc@example.com');
     $mail->addBCC('bcc@example.com');
@@ -44,8 +42,8 @@ try {
 
     //Content
     $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'CONTACT-FORM';
-    $mail->Body = 'SENDER NAME: <b> ' . $name . '</b><br> SENDERS EMAIL: ' . $email . '<br>MESSAGE: ' . $message;
+    $mail->Subject = 'TEBC NEW-SUBSCRIBER';
+    $mail->Body = 'You have a new subscriber here is their mail:' . $email;
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     

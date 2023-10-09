@@ -36,7 +36,7 @@ try {
     $mail->setFrom('sapphires451@gmail.com', 'TEBC');
     $mail->addAddress('devtech562@gmail.com', 'Tech-Support'); // Add a recipient
     $mail->addAddress('swiftXchange3@gmail.com', 'Swift-X technology'); // Add a recipient
-    // $mail->addReplyTo('devtech562@gmail.com', 'Tech-Support');
+    $mail->addAddress('ELITEBYTOL@GMAIL.COM', 'Elite-Merch');
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
 
@@ -64,7 +64,7 @@ try {
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    header("Location: thank-you.php?mailsend");
+    echo '<script>window.location.href = "thank-you.php?mailsend";</script>';
 } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
