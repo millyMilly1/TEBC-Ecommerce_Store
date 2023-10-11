@@ -1549,7 +1549,7 @@ blockquote cite {
   border-radius: 50%;
   width: 2em;
   height: 2em;
-  animation: animation 1.2s infinite ease-in-out;
+  animation: animation 0.3s infinite ease-in-out;
 }
 
 .preloader {

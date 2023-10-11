@@ -28,10 +28,10 @@
   </head>
   <body>
 
-    <div class="preloader-wrapper">
+    <!-- <div class="preloader-wrapper">
       <div class="preloader">
       </div>
-    </div>
+    </div> -->
 
     <div class="search-popup">
       <div class="search-popup-container">
